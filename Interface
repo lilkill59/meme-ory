@@ -4,9 +4,12 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <title>MEME-Ory</title>
-        <link rel="stylesheet" type="text/css" href="TD2exo2.css" />
+        <link rel="stylesheet" type="text/css" href="Interface.css" />
     </head>
 <body>
-  
+    <header>
+        <h1><Div Align=center>MEME-Ory</Div></h1>
+        <h2><Div Align=center>Bienvenue !</Div></h2>
+    </header>
 </body>
 </html>
