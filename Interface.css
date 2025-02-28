@@ -1,0 +1,17 @@
+header
+{
+    border : solid 1px black;
+    background-color: rgb(107, 69, 128);
+    font-family:fantasy
+}
+aside
+{
+    border : solid 1px black;
+    background-color: rgb(107, 69, 128);
+    font-family:fantasy;
+    font-style: italic;
+    float right ;
+    width: 20%
+    ;
+
+}
