@@ -12,28 +12,31 @@
         <h2><Div Align=center>Bienvenue !</Div></h2>
     </header>
     <div class="menu">
-        <div class="login">
-            <form Align=center>
-                <label for ="Pseudo"> Pseudo:</label>
-                <input type="text" name="Pseudo" id="Pseudo"  placeholder ="Entrez votre pseudo" required/><br>
-            </form>
-        </div>
-        <br>
-        <br>
-        <div Align=center class ="niveaux_et_start">
+        <div Align=center class ="niveaux_et_stop">
+            <div class="login">
+                <form Align=center>
+                    <label for ="Pseudo"> Pseudo:</label>
+                    <input type="text" name="Pseudo" id="Pseudo"  placeholder ="Entrez votre pseudo" required/><br>
+                </form>
+            </div>
+            <br>
+            <br>
             <label for ="Diff"> Niveau de difficulté:</label><br><br><br>
             <select name="Diff" id="niveau">
                 <option value="Niv1"> Niveau 1</option>
                 <option value="Niv2"> Niveau 2</option>
                 <option value="Niv3"> Niveau 3</option>
             </select><br><br><br><br>
-            <button id="start" class="start">Jouer</button> 
+            <button id="stop" class="cacher">Stop</button>
         </div>
-        <div class ="Stats">
+        <div Align=center class ="Stats">
             <div id="chrono"></div>
-            <div id="compteur_mouv"></div>
+            <div id="compteur_mouv"></div> 
         </div>
-        </div>
+    </div>
+    <div class="contolesbox">
+        <button id="start" class="start">Jouer</button> 
+        <p id="resultats"></p>
     </div>
     <script src="script.js"></script>
 </body>
