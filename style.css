@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 140px);
+    grid-gap: 2rem;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 140px;
+    perspective: 1000px;
+}
+
+.face, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.face {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.card.retourner .face,
+.card.retourner .back {
+    transform: rotateY(0deg);
+}
+
+.card.retourner {
+    transform: rotateY(180deg);
+}
