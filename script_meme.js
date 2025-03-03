@@ -41,6 +41,8 @@ const card_gen = () => {
         back.classList="back";
 
         face.src = item.imgSrc;
+        back.src = "./meme/arriere.jpg";
+
         
         section.appendChild(card);
         card.appendChild(face);
