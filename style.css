@@ -33,6 +33,7 @@ section {
 
 .face {
     transform: rotateY(180deg);
+    z-index: 1;
 }
 
 .back {
@@ -51,3 +52,4 @@ section {
 .card.retourner {
     transform: rotateY(180deg);
 }
+
