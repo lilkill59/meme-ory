@@ -1,7 +1,9 @@
 const section = document.querySelector("section");
+const coups   = document.querySelector("span");
 
-const getData = () => [
-    {imgSrc: "C:\Users\Lilian Beck\OneDrive\Documents\L1\semestre 2\tech web\tp meme-ory\programme\meme", name: "meme_01"},
+
+const image = [
+    {imgSrc: "./meme/meme_01.jpg", name: "meme_01"},
     {imgSrc: "./meme/meme_02.jpg", name: "meme_02"},
     {imgSrc: "./meme/meme_03.jpg", name: "meme_03"},
     {imgSrc: "./meme/meme_04.jpg", name: "meme_04"},
@@ -18,16 +20,13 @@ const getData = () => [
     {imgSrc: "./meme/meme_06.jpg", name: "meme_06"},
     {imgSrc: "./meme/meme_07.jpg", name: "meme_07"},
     {imgSrc: "./meme/meme_08.jpg", name: "meme_08"},
-    
 ]
-
-
 
 //change aléatoirement l'ordre des cartes 
 function randomize() {
-    const cardData = getData();
+    const cardData = image;
     cardData.sort(() => Math.random() - 0.5);
-}
+    return cardData;}
 
 // crée les deux faces de la carte
 const card_gen = () => {
@@ -50,13 +49,15 @@ const card_gen = () => {
         card.addEventListener("click", () => {
             card.classList.toggle("retourner");
             verif(e);
+            clickCount++;
+            coups.textContent = clickCount; 
         });
-    consolelog(cardData);
     });
 };
-
+let clickCount = 0;
+card_gen();
 //verifier les cartes
 const verif = (e)=> {
     const verif = e.target;
-    consolelog(verif);
-}
+    const active = document.querySelectorAll(".retourner");
+    const total = image.length/2;}
