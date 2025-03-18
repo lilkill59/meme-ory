@@ -7,49 +7,46 @@ body {
     margin: 0;
     background-color: #f0f0f0;
 }
+.h1,.h2 {
+    text-align: center;
+    color: #333;
+}
 
 section {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(3, 140px);
+    grid-template-columns: auto auto auto;
+    grid-template-rows:auto;
     grid-gap: 2rem;
+    perspective: 800px;
 }
 
 .card {
     position: relative;
     width: 100px;
     height: 140px;
-    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgbda(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 .face, .back {
     width: 100%;
     height: 100%;
     position: absolute;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
 }
 
-.face {
+.face{
     transform: rotateY(180deg);
-    z-index: 1;
 }
 
 .back {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+    background-image: url('./meme/arriere.jpg');
+    background-size: cover;
+    backface-visibility: hidden;
 }
 
-.card.retourner .face,
-.card.retourner .back {
-    transform: rotateY(0deg);
-}
-
-.card.retourner {
+.retourner {
     transform: rotateY(180deg);
 }
 
