@@ -1,0 +1,93 @@
+header
+{
+    border : solid 1px black;
+    background-color: white;
+    border-radius: 0.6em; 
+    font-family:fantasy
+}
+
+/* Style pour les titres h1 et h2 */
+h1, h2 {
+    color: rgb(107, 69, 128);
+    font-family: fantasy;
+}
+
+/* Style du body */
+body {
+    background-color: rgb(107, 69, 128);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de la section contenant les classements */
+.affichage {
+    border: 5px solid rgb(19, 7, 26);
+    box-sizing: border-box;
+    height: auto;
+    margin: 50px 200px;
+    background-color: white;
+    border-radius: 0.6em;
+    padding: 20px;
+}
+
+/* Style des tableaux de classement */
+.classement {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du classement */
+.classement h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(107, 69, 128);
+}
+
+/* Style de la table */
+.tableau {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableau th, .tableau td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tableau th {
+    background-color: rgb(107, 69, 128);
+    color: white;
+}
+
+.tableau tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tableau tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style des cellules pour une meilleure lisibilité */
+.tableau td {
+    font-size: 1.1em;
+}
+
+/* Appliquer un style particulier pour les rangs */
+.tableau td:nth-child(1) {
+    font-weight: bold;
+    color: rgb(107, 69, 128);
+}
+
+/* Footer ou tout autre ajout dans la page */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
