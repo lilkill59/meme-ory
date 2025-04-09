@@ -52,7 +52,3 @@ Le jeu de Memory est un classique qui met à l'épreuve la mémoire des joueurs.
 1. Lancez le serveur local pour le front-end.
 2. Assurez-vous que le serveur back-end et la base de données MySQL sont configurés et en cours d'exécution.
 3. Ouvrez le jeu dans votre navigateur et commencez à jouer !
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
