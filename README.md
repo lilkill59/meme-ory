@@ -8,9 +8,6 @@ Bienvenue sur le projet de jeu de Memory fait par des elèves de première anné
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Contribution](#contribution)
-- [Licence](#licence)
 
 ## Description
 
